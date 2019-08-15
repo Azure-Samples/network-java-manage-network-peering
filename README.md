@@ -4,12 +4,12 @@ languages:
 - java
 products:
 - azure
-services: virtual-network
-platforms: java
-author: yaohaizh
+extensions:
+- services: virtual-network
+- platforms: java
 ---
 
-## Getting Started with Network - Manage Network Peering In Same Subscription - in Java ##
+# Getting Started with Network - Manage Network Peering In Same Subscription - in Java #
 
 
   Azure Network sample for enabling and updating network peering between two virtual networks
