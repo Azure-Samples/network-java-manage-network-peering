@@ -4,9 +4,8 @@ languages:
 - java
 products:
 - azure
-extensions:
-- services: virtual-network
-- platforms: java
+description: "Getting Started with Network - Manage Network Peering In Same Subscription - in Java"
+urlFragment: network-java-manage-network-peering
 ---
 
 # Getting Started with Network - Manage Network Peering In Same Subscription - in Java #
