@@ -4,19 +4,21 @@ languages:
 - java
 products:
 - azure
-description: "Getting Started with Network - Manage Network Peering In Same Subscription - in Java"
-urlFragment: network-java-manage-network-peering
+extensions:
+- services: virtual-network
+- platforms: java
 ---
 
-# Manage Network Peering In Same Subscription (Java)
+# Getting Started with Network - Manage Network Peering In Same Subscription - in Java #
 
-Azure Network sample for enabling and updating network peering between two virtual networks.
+
+  Azure Network sample for enabling and updating network peering between two virtual networks
  
-## Summary
-
+  Summary ...
+ 
   - This sample creates two virtual networks in the same subscription and then peers them, modifying various options on the peering.
  
-## Details
+  Details ...
  
   1. Create two virtual networks, network "A" and network "B"...
   - network A with two subnets
@@ -37,8 +39,7 @@ Azure Network sample for enabling and updating network peering between two virtu
   4. Delete the peering
   - the removal of the peering takes place on both networks, as long as they are in the same subscription
  
-## Notes
-
+  Notes: 
   - Once a peering is created, it cannot be pointed at another remote network later.
   - The address spaces of the peered networks cannot be changed as long as the networks are peered.
   - Gateway transit scenarios as well as peering networks in different subscriptions are possible but beyond the scope of this sample.
@@ -49,22 +50,24 @@ Azure Network sample for enabling and updating network peering between two virtu
     to modify each peering separately, which becomes required when working with networks in different subscriptions.
  
 
-## Running this sample
+## Running this Sample ##
 
 To run this sample:
 
 Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md).
 
-```bash
-git clone https://github.com/Azure-Samples/network-java-manage-network-peering.git
-cd network-java-manage-network-peering
-mvn clean compile exec:java
-```
+    git clone https://github.com/Azure-Samples/network-java-manage-network-peering.git
 
-## More information
+    cd network-java-manage-network-peering
+
+    mvn clean compile exec:java
+
+## More information ##
 
 [http://azure.com/java](http://azure.com/java)
 
-If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212).
+If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
+
+---
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
